@@ -1,0 +1,5 @@
+# R Script Example 
+library(dplyr) 
+result <- dataset %>% 
+  group_by(gear) %>% 
+  summarize(AverageMPG = mean(mpg))
