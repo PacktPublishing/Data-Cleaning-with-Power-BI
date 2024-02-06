@@ -1,0 +1,7 @@
+# Python Script Example 
+import pandas as pd
+dataset = pd.DataFrame(dataset)
+# Group by 'gear' and calculate the average of 'mpg'
+result = dataset.groupby('gear').agg({'mpg': 'mean'}).reset_index()
+# Rename the column to match the R example
+result = result.rename(columns={'mpg': 'AverageMPG'})
