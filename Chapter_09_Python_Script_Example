@@ -1,6 +1,7 @@
 # Python Script Example 
 import pandas as pd
-dataset = pd.DataFrame(dataset)
+mtcars = pd.read_csv('C:\\AbsolutePath\\Data-Cleaning-with-Power-BI\\mtcars.csv')
+dataset = pd.DataFrame(mtcars)
 # Group by 'gear' and calculate the average of 'mpg'
 result = dataset.groupby('gear').agg({'mpg': 'mean'}).reset_index()
 # Rename the column to match the R example
